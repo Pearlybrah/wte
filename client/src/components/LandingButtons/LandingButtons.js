@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./style.css"
+
 class LandingButtons extends Component {
   render() {
     return (
@@ -30,4 +31,4 @@ class LandingButtons extends Component {
   }
 }
 export default LandingButtons;
-//If setting a color for the class CONTAINER or ROW background it applies to the both the login and signup wrapper divs as well
+

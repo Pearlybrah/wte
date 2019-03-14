@@ -1,6 +1,6 @@
 import React from "react";
 
-function Details(props) {
+function SearchResturant(props) {
   return (
     <form
       style={{
@@ -45,4 +45,4 @@ function Details(props) {
   );
 }
 
-export default Details;
+export default SearchResturant;

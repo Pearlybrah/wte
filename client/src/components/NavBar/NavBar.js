@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 import { logoutUser } from "../../actions/authActions";
+
 class Navbar extends Component {
   onLogoutClick = e => {
     e.preventDefault();
@@ -16,39 +17,42 @@ class Navbar extends Component {
             <Link
               to="/"
               style={{
-                fontFamily: "monospace"
+                fontFamily: "monospace",
+                margin: "0 0 0 3em"
               }}
-              className="col s4 center brand-logo black-text"
+              className="col s4 brand-logo black-text"
             >
               What To Eat
             </Link>
-            {/* <Link
+            <Link
               to="/spinner"
               style={{
-                fontFamily: "monospace"
+                fontFamily: "monospace",
+                margin: "0 0 0 27em"
               }}
-              className="col s4 center brand-logo black-text"
+              className="col s4 brand-logo black-text"
             >
               SpinForFun
             </Link>
             <Link
               to="/aboutus"
               style={{
-                fontFamily: "monospace"
+                fontFamily: "monospace",
+                margin: "0 0 0 23em"
               }}
-              className="col s4 center brand-logo black-text"
+              className="col s4 brand-logo black-text"
             >
-              MeetTheTeam
-            </Link> */}
+              About
+            </Link>
             <button
               style={{
                 width: "150px",
                 borderRadius: "3px",
                 letterSpacing: "1.5px",
-                marginTop: "1rem"
+                margin: "0 0 0 84em"
               }}
               onClick={this.onLogoutClick}
-              className="btn btn-large waves-effect waves-light hoverable blue accent-3"
+              className="btn btn-small waves-effect waves-light hoverable blue accent-3"
             >
               Logout
             </button>

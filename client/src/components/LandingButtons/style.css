@@ -1,3 +1,7 @@
 .container{
     background-color: #ffffff;
 }
+
+.row{
+    padding: 0 0 0 .5em;
+}

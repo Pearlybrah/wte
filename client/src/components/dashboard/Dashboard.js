@@ -3,9 +3,10 @@ import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { logoutUser } from "../../actions/authActions";
 import Slot from "react-slot-machine";
-import Details from "../Details";
+import SearchResturant from "../SearchResturant"
 import API from "../../utils/API";
 import "./style.css";
+
 class Dashboard extends Component {
   state = {
     result: [],
@@ -69,8 +70,12 @@ class Dashboard extends Component {
         <style jsx="true">
           {`
             .slot {
+              margin: auto;
+              margin-top: 50px;
+              text-align: center;
               font-size: 4em;
-              height: 3em;
+              height: 2em;
+              width: 70%;
             }
             .slot-item {
               height: 100%;
@@ -105,21 +110,21 @@ class Dashboard extends Component {
         {this.state.turn ? (
           this.displayResult(this.state.result, this.state.target)
         ) : (
-          <p id="ppp">
+          <p>
             <br />
             <br />
             <br />
           </p>
         )}
         <button
-          style={{ margin: "1.5em 42em" }}
-          className="btn btn-primary blue accent-3"
+          style={{ margin: "1.5em 46.5em", padding: "0 3em" }}
+          className="btn-small btn-primary blue accent-3"
           onClick={this.setClicked}
         >
-          Shuffle Restuarants
+          Shuffle
         </button>
 
-        <Details
+        <SearchResturant
           handleInputChange={this.handleInputChange}
           handleFormSubmit={this.handleFormSubmit}
         />
